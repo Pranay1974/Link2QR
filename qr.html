@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Studio | Professional QR Generator</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="qr.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>QR Studio</h1>
+            <p>Generate high-resolution, production-ready QR codes for your brand instantly.</p>
+        </div>
+
+        <form id="qr-form">
+            <div class="input-group">
+                <label>Content Source</label>
+                <input type="text" id="qr-input" placeholder="Paste URL or text here..." required>
+            </div>
+
+            <div class="input-group">
+                <label>Resolution</label>
+                <select id="qr-size">
+                    <option value="200x200">Standard (200x200)</option>
+                    <option value="400x400">Medium (400x400)</option>
+                    <option value="600x600">High Definition (600x600)</option>
+                    <option value="1000x1000">Print Quality (1000x1000)</option>
+                </select>
+            </div>
+
+            <div class="qr-display">
+                <span class="placeholder-text" id="placeholder">Your QR code will appear here</span>
+                <img src="" alt="Generated QR" id="qr-image">
+            </div>
+
+            <div class="button-stack">
+                <button type="submit" class="btn-generate">Generate QR Code</button>
+                <button type="button" id="download-btn" class="btn-download">Download PNG</button>
+            </div>
+        </form>
+
+        <footer>
+            Powered by QRServer API • Secure & Encryption Ready
+        </footer>
+    </div>
+    <script src="qr.js"></script>
+</body>
+
+</html>
